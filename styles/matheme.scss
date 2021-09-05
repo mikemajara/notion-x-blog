@@ -1,0 +1,50 @@
+@import 'reset.scss';
+@import 'theme.scss';
+@import 'fonts.scss';
+
+:root {
+  --transition: all 0.3s cubic-bezier(0.8, 0.04, 0.4, 1) !important;
+
+  --shadow-lg: 0 40px 80px -20px rgb(0, 0, 0, 0.1) !important;
+  --shadow-md: 0 20px 40px -20px rgb(0, 0, 0, 0.2) !important;
+  --shadow-sm: 0 10px 20px -10px rgb(0, 0, 0, 0.1) !important;
+  --font: 'Montserrat', sans-serif !important;
+}
+
+body {
+  font-family: var(--font);
+  .notion {
+    font-family: unset;
+  }
+}
+
+.notion-gallery-grid.notion-gallery-grid-size-small {
+  grid-template-columns: auto;
+  .notion-collection-card.notion-collection-card-size-small {
+    transition: var(--transition);
+    background-color: white;
+    &:hover {
+      transition: var(--transition);
+      transform: scale(1.0125);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--);
+    }
+  }
+}
+
+// :root {
+//   --color-bg-default: #fff !important;
+//   --color-border-default: rgba(0, 0, 0, 0.2) !important;
+//   --color-card-bg: transparent !important;
+
+//   --color-text-default: #000 !important;
+//   --color-text-gray: var(--color-bg-default) !important;
+
+//   --shadow-lg: 0 40px 80px -20px rgb(0, 0, 0, 0.1) !important;
+//   --shadow-md: 0 20px 40px -20px rgb(0, 0, 0, 0.2) !important;
+//   --shadow-sm: 0 10px 20px -10px rgb(0, 0, 0, 0.1) !important;
+
+//   --transition: all 0.3s cubic-bezier(0.8, 0.04, 0.4, 1) !important;
+//   --column-spacing: 30px !important;
+//   --font: 'ny', serif !important;
+// }

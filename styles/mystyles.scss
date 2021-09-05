@@ -1,0 +1,23 @@
+.notion-link {
+  background: linear-gradient(to top, lightblue 40%, transparent 40%) !important;
+  &:hover {
+    background: linear-gradient(to top, rgb(122, 153, 163) 50%, transparent 50%) !important;
+  }
+}
+
+.notion-collection-card {
+  border-radius: 10px;
+  .notion-collection-card-cover {
+  opacity: .3;
+  img {
+    border-radius: 0;
+  }
+}
+  .notion-collection-card-body {
+    position: absolute;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+}
